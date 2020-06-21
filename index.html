@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pride Loaders</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+</head>
+
+<body>
+  <div class="loader2">
+    <div class="loader">
+      <div class="indigo line"></div>
+      <div class="blue line"></div>
+      <div class="green line"></div>
+      <div class="yellow line"></div>
+      <div class="orange line"></div>
+      <div class="red line"></div>
+    </div>
+    <h1>Loading</h1>
+  </div>
+  <div class="loader3">
+    <div class="hloader">
+      <div class="hline" id="indigo"></div>
+      <div class="hline" id="blue"></div>
+      <div class="hline" id="green"></div>
+      <div class="hline" id="yellow"></div>
+      <div class="hline" id="orange"></div>
+      <div class="hline" id="red"></div>
+    </div>
+    <h1>Loading</h1>
+  </div>
+  <div class="loader4">
+    <div class="pride">
+      <img src="Pride/White-01.png" alt="white" id="pwhite" class="pridecolors">
+      <img src="Pride/Blue-01.png" alt="blue" id="pblue" class="pridecolors">
+      <img src="Pride/Green-01.png" alt="green" id="pgreen" class="pridecolors">
+      <img src="Pride/Orange-01.png" alt="orange" id="porange" class="pridecolors">
+      <img src="Pride/Indigo-01.png" alt="indigo" id="pindigo" class="pridecolors">
+      <img src="Pride/Yellow-01.png" alt="yellow" id="pyellow" class="pridecolors">
+      <img src="Pride/Red-01.png" alt="red" id="pred" class="pridecolors">
+    </div>
+    <h1>Loading</h1>
+  </div>
+</body>
+<script>
+tl2 = gsap.timeline({ repeat: 100 });
+tl2.from(".indigo", { duration: 3, y: 100, ease: "power2.in" });
+tl2.to(".indigo", { duration: 3, y: 100 });
+tl2.from(".blue", { duration: 3, y: 100, ease: "power2.in" }, "-=5.8");
+tl2.to(".blue", { duration: 3, y: 100 }, "-=2.8");
+tl2.from(".green", { duration: 3, y: 100, ease: "power2.in" }, "-=5.8");
+tl2.to(".green", { duration: 3, y: 100 }, "-=2.8");
+tl2.from(".yellow", { duration: 3, y: 100, ease: "power2.in" }, "-=5.8");
+tl2.to(".yellow", { duration: 3, y: 100 }, "-=2.8");
+tl2.from(".orange", { duration: 3, y: 100, ease: "power2.in" }, "-=5.8");
+tl2.to(".orange", { duration: 3, y: 100 }, "-=2.8");
+tl2.from(".red", { duration: 3, y: 100, ease: "power2.in" }, "-=5.8");
+tl2.to(".red", { duration: 3, y: 100 }, "-=2.8");
+tl3 = gsap.timeline({ repeat: 100 });
+tl3.from("#indigo", { duration: 1, x: -100 });
+tl3.to("#indigo", { duration: 1, x: 100 }, "+=0.9");
+tl3.from("#blue", { duration: 1, x: -100 }, "-=2.3");
+tl3.to("#blue", { duration: 1, x: 100 }, "-=0.8");
+tl3.from("#green", { duration: 1, x: -100 }, "-=2.3");
+tl3.to("#green", { duration: 1, x: 100 }, "-=0.8");
+tl3.from("#yellow", { duration: 1, x: -100 }, "-=2.3");
+tl3.to("#yellow", { duration: 1, x: 100 }, "-=0.8");
+tl3.from("#orange", { duration: 1, x: -100 }, "-=2.3");
+tl3.to("#orange", { duration: 1, x: 100 }, "-=0.8");
+tl3.from("#red", { duration: 1, x: -100 }, "-=2.3");
+tl3.to("#red", { duration: 1, x: 100 }, "-=0.8");
+tl4 = gsap.timeline({repeat:100,yoyo:true});
+tl4.fromTo("#pred",{duration:0.2,opacity:0},{duration:0.2,opacity:1,ease:"steps(1)"});
+tl4.fromTo("#porange",{duration:0.2,opacity:0},{duration:0.2,opacity:1,ease:"steps(1)"});
+tl4.fromTo("#pyellow",{duration:0.2,opacity:0},{duration:0.2,opacity:1,ease:"steps(1)"});
+tl4.fromTo("#pgreen",{duration:0.2,opacity:0},{duration:0.2,opacity:1,ease:"steps(1)"});
+tl4.fromTo("#pblue",{duration:0.2,opacity:0},{duration:0.2,opacity:1,ease:"steps(1)"});
+tl4.fromTo("#pindigo",{duration:0.2,opacity:0},{duration:0.2,opacity:1,ease:"steps(1)"});
+</script>
+</html>
