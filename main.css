@@ -115,3 +115,16 @@ body {
   #pindigo{
       z-index: 4;
   }
+  @media (max-width:500px)
+  {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #212121;
+        text-align: center;
+        color: white;
+        height: 100vh;
+      }
+  }
